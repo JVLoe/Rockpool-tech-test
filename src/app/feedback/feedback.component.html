@@ -1,0 +1,34 @@
+<div>
+  <h2>Feedback</h2>
+  <form [formGroup]="formGroup" #f="ngForm" (ngSubmit)="formSubmit(f.value)">
+    <div>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" class="form-control" />
+    </div>
+    <div>
+      <label for="companyName">Company Name: </label>
+      <input type="text"  id="companyName" name="companyName" class="form-control" />
+    </div>
+    <div>
+      <label for="jobTitle">Job Title: </label>
+      <input type="text" id="jobTitle" name="jobTitle" class="form-control" />
+    </div>
+    <div>
+      <label for="yearsInCurrentRole">Years in current role: </label>
+      <input  type="text" id="yearsInCurrentRole" name="yearsInCurrentRole" class="form-control" />
+    </div>
+    <div>
+      <label for="likesInMarketingCorp">What do you like about the marketing corp: </label>
+      <input type="text" id="likesInMarketingCorp" name="likesInMarketingCorp" class="form-control" />
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+  <button class="btn btn-primary" type="button" (click)="goBack()">go back</button>
+</div>
+
+<!--name -->
+<!--company name -->
+<!--job title -->
+<!--years in current role -->
+<!--what you like about marketing corp (multiline) -->
+<!--submit button-->
